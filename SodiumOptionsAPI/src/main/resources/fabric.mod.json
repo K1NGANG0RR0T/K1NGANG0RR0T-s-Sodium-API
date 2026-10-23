@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"name": "${display_name}",
+	"version": "${modversion}",
+	"description": "${description}",
+	"authors": [
+		"${author}"
+	],
+	"contact": {
+		"sources": "https://github.com/${github}/${name}"
+	},
+	"license": "${license}",
+	"icon": "assets/${namespace}/textures/mod_logo.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+          "toni.sodiumoptionsapi.SodiumOptionsAPI"
+		],
+		"main": [
+			"toni.sodiumoptionsapi.SodiumOptionsAPI"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"fabric-api": "*",
+		"minecraft": "${mc}"
+	},
+	"suggests": {
+		"reeses-sodium-options": "*"
+	},
+	"accessWidener": "${id}.accesswidener"
+}

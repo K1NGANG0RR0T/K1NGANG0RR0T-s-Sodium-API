@@ -1,0 +1,20 @@
+modLoader = "javafml"
+loaderVersion="[1,)"
+license="${license}"
+showAsResourcePack=false
+
+[[mods]]
+modId="${id}"
+displayName="${display_name}"
+version="${modversion}"
+authors="${author}"
+description="${description}"
+logoFile="assets/${namespace}/textures/mod_logo.png"
+displayURL = "https://github.com/${github}/${name}/"
+
+[[dependencies."${id}"]]
+modId="minecraft"
+mandatory=true
+versionRange="${mc}"
+ordering="NONE"
+side="BOTH"
